@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--idioma de la pagina-->
+<html lang="es">
+
+<head>
+    <!--codificacion de los caracteres-->
+    <meta charset="UTF-8">
+    <!--meta viewport para que el navegador cargue la web desde diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion de la pagina web-->
+    <meta name="description" content="Empresa de Electronica y Robotica">
+    <!--palabras clave para el buscador-->
+    <meta name="keywords" content="Keyday, Electronics, keydayelectronics, Electronica, Robotica, Robotics">
+    <!--autor de la pagina-->
+    <meta name="author" content="Francesc Miquel">
+    <!--permite a los moteres indexar la pagina-->
+    <meta name="robots" content="index, follow">
+    <!--enlace al archivo de estilo en la carpeta /css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--enlace al icono de la ventana del navegador-->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!--titulo de contacto-->
+    <title>Contacto</title>
+</head>
+<!--body class contacto para que el css sepa la pagina en la que se encuentra actualmente-->
+
+<body class="contacto">
+    <!--seccion header-->
+    <header>
+        <!-- Menu de navegacion principal nav y lista desordenada -->
+        <nav class="menu_nav_class">
+            <ul class="menu_ul_class">
+                <!-- Enlace al inicio con el logo -->
+                <li class="menu_home">
+                    <a href="../index.html" class="menu_a">
+                        <p class="menu_p">Inicio</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de productos -->
+                <li class="menu_productos">
+                    <a href="productos.html" class="menu_a">
+                        <p class="menu_p">Productos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de presupuestos -->
+                <li class="menu_presupuestos">
+                    <a href="presupuestos.html" class="menu_a">
+                        <p class="menu_p">Presupuestos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de contacto -->
+                <li class="menu_contacto">
+                    <a href="contacto.html" class="menu_a">
+                        <p class="menu_p">Contacto</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--div con el titulo de contacto-->
+    <div>
+        <h1>Contacto</h1>
+    </div>
+    <!--seccion 1 que contiene una tabla-->
+    <section class="section1_class">
+        <!--titulo de la seccion-->
+        <h2>Informaci&oacute;n de contacto</h2>
+        <!--div contiene diferentes divs con la imagen del mapa y varios parrafos informativos-->
+        <div class="contacto_flex_container">
+            <!--la imagen se encuentra dentro de un enlace a bing maps que muestra la ubicacion de la empresa-->
+            <div class="contacto_img_col">
+                <a
+                    href="https://www.bing.com/maps?q=123+Sunset+Lane%2C+Suite+7+Honolulu%2C+HI+96815&FORM=HDRSC6&cp=21.278298%7E-157.823307&lvl=14.6">
+                    <img src="../images/honolulu_map_01.png" alt="map image loading error"
+                        style="width: 100%; border-radius: 10px;">
+                </a>
+            </div>
+            <!--div que contiene los parrafos informativos-->
+            <div class="contacto_info_col">
+                <p>
+                    Keyday Electronics&reg; se encuentra en 123 Sunset Lane, Suite 7 Honolulu, HI 96815 EEUU
+                </p>
+                <!--este parrafo contiene un enlace mailto:-->
+                <p>
+                    <a href="mailto:keydayelectronics@gmail.com">Env&iacute;enos un correo electr&oacute;nico</a>
+                    keydayelectronics@gmail.com
+                </p>
+                <p>
+                    En Keyday Electronics&reg;, la satisfacci&oacute;n de nuestros clientes es muy importante,
+                    as&iacute; que no dude en contactar con nosotros.
+                </p>
+                <p>
+                    Contacte con nosotros telef&oacute;nicamente +34 612 34 57 89
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--seccion footer-->
+    <footer id="footer_id">
+        <!--contenedor principal del footer-->
+        <div class="footer_container">
+            <!--contenedor de las 5 imagenes de redes sociales-->
+            <div class="sociales">
+                <a href="https://www.facebook.com"><img class="social_img_class_00" src="../images/facebooklogo.webp"
+                        alt="facebook logo not loaded" width="256" height="256"></a>
+                <a href="https://x.com"><img class="social_img_class_00" src="../images/xlogo.png"
+                        alt="x logo not working" width="300" height="300"></a>
+                <a href="https://www.linkedin.com"><img class="social_img_class_00" src="../images/inlogo.png"
+                        alt="linkedin logo not working" width="240" height="240"></a>
+                <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00"
+                        src="../images/instalogo.png" alt="instagram logo not working" width="256" height="256"></a>
+                <a href="https://www.youtube.com"><img class="social_img_class_00" src="../images/ytlogo.png"
+                        alt="youtube logo not working" width="256" height="256"></a>
+            </div>
+            <!--contenedor de la direccion de la empresa-->
+            <div class="direccion">
+                <p>
+                    Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
+                </p>
+            </div>
+            <!--contenedor del aviso legal-->
+            <div class="aviso_legal">
+                <p>
+                    Lea nuestro <a href="aviso_legal.html" target="_blank">Aviso Legal</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

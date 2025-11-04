@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--idioma de la pagina-->
+<html lang="es">
+
+<head>
+    <!--codificacion de los caracteres-->
+    <meta charset="UTF-8">
+    <!--meta viewport para que el navegador cargue la web desde diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion de la pagina web-->
+    <meta name="description" content="personal page">
+    <!--palabras clave para el buscador-->
+    <meta name="keywords" content="klove">
+    <!--autor de la pagina-->
+    <meta name="author" content="Francesc Miquel">
+    <!--permite a los motores indexar la pagina-->
+    <meta name="robots" content="index, follow">
+    <!--enlace al archivo de estilo en la carpeta /css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--enlace al icono de la ventana del navegador-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--titulo de la pagina-->
+    <title>K Love</title>
+</head>
+<!--body class home para que el css sepa la pagina en la que se encuentra actualmente-->
+
+<body class="home">
+    <!--seccion header-->
+    <header>
+        <!-- Menu de navegacion principal nav y lista desordenada -->
+        <nav class="menu_nav_class">
+            <ul class="menu_ul_class">
+                <!-- Enlace al inicio -->
+                <li class="menu_home">
+                    <a href="index.html" class="menu_a">
+                        <p class="menu_p">Inicio</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de productos -->
+                <li class="menu_productos">
+                    <a href="views/productos.html" class="menu_a">
+                        <p class="menu_p">Productos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de presupuestos -->
+                <li class="menu_presupuestos">
+                    <a href="views/presupuestos.html" class="menu_a">
+                        <p class="menu_p">Calendar</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de contacto -->
+                <li class="menu_contacto">
+                    <a href="https://baryonic.github.io/webspaces" class="menu_a">
+                        <p class="menu_p">Apuntes HTML</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+
+        </div>
+        <div class="coinbase_div_class">
+            <div class="crypto-container">
+                <h2>Crypto Prices</h2>
+                <div class="crypto-prices">
+                    <!-- Prices will be populated by JavaScript -->
+                </div>
+                <div class="last-updated">Last updated: --</div>
+            </div>
+        </div>
+        <div class="info_div_class">
+            info
+        </div>
+        <div class="noticias_div_class">
+            <div class="news-controls">
+                <button class="prev-btn">‹--</button>
+                <button class="next-btn">--›</button>
+            </div>
+            <div class="news-container">
+                <h2>Latest News</h2>
+                <div class="loading">Loading news...</div>
+                <div class="news-feed">
+                    <div class="news-item">
+                        <h3><a href="#" target="_blank">Loading...</a></h3>
+                        <p>Please wait while we fetch the latest news...</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--seccion footer-->
+    <footer id="footer_id">
+        <!--contenedor principal del footer-->
+        <div class="footer_container">
+
+            <!--contenedor del aviso legal-->
+            <div class="aviso_legal">
+                <p>
+                    Lea nuestro <a href="views/aviso_legal.html" target="_blank">Aviso Legal</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for news functionality -->
+    <script src="js/noticias.js"></script>
+    <!-- JavaScript for cryptocurrency prices -->
+    <script src="js/coinbase.js"></script>
+    <!-- JavaScript for info functionality -->
+    <script src="js/info.js"></script>
+</body>
+
+</html>

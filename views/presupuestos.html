@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--idioma de la pagina-->
+<html lang="es">
+
+<head>
+    <!--enlace a el javascript para la funcion del boton del formulario-->
+    <script src="../js/presupuestos.js"></script>
+    <!--codificacion de los caracteres-->
+    <meta charset="UTF-8">
+    <!--meta viewport para que el navegador cargue la web desde diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion de la pagina web-->
+    <meta name="description" content="Empresa de Electronica y Robotica">
+    <!--palabras clave para el buscador-->
+    <meta name="keywords" content="Keyday, Electronics, keydayelectronics, Electronica, Robotica, Robotics">
+    <!--autor de la pagina-->
+    <meta name="author" content="Francesc Miquel">
+    <!--permite a los motores indexar la pagina-->
+    <meta name="robots" content="index, follow">
+    <!--enlace al archivo de estilo en la carpeta /css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--enlace al icono de la ventana del navegador-->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!--titulo de presupuestos-->
+    <title>Presupuestos</title>
+</head>
+<!--body class presupuestos para que el css sepa la pagina en la que se encuentra actualmente-->
+
+<body class="presupuestos">
+    <!--seccion header-->
+    <header>
+        <!-- Menu de navegacion principal nav y lista desordenada -->
+        <nav class="menu_nav_class">
+            <ul class="menu_ul_class">
+                <!-- Enlace al inicio -->
+                <li class="menu_home">
+                    <a href="../index.html" class="menu_a">
+                        <p class="menu_p">Inicio</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de productos -->
+                <li class="menu_productos">
+                    <a href="productos.html" class="menu_a">
+                        <p class="menu_p">Productos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de presupuestos -->
+                <li class="menu_presupuestos">
+                    <a href="presupuestos.html" class="menu_a">
+                        <p class="menu_p">Presupuestos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de contacto -->
+                <li class="menu_contacto">
+                    <a href="contacto.html" class="menu_a">
+                        <p class="menu_p">Contacto</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--div con el titulo presupuestos-->
+    <div>
+        <h1>Presupuestos</h1>
+    </div>
+    <!--seccion que contiene un h2, un div con dos parrafos y el formulario-->
+    <section id="formulario_section_id">
+        <h2>Formulario</h2>
+        <div>
+            <p>Rellene y env&iacute;e el siguiente formulario para solicitar un presupuesto personalizado.</p>
+            <p>Solicite informaci&oacute;n acerca de impresi&oacute;n de placas base, 3D o reparaci&oacute;n de
+                sistemas.</p>
+        </div>
+        <!-- las labels hacen uso de del atributo pattern y required para la validacion del formulario-->
+        <!-- atributo onsubmit llama a la funcion validarFormulario() que se encuentra dentro del script presupuestos.js-->
+        <form id="presupuestos_form_id" onsubmit="return validarFormulario()" action="/submit-form">
+            <!--label que contiene un input de tipo texto-->
+            <label>
+                Nombre: <input type="text" id="name_id" name="nombre" placeholder="Introduzca su nombre"
+                    pattern="[A-Za-z\s]+" required title="Introduzca solo letras">
+            </label>
+            <!--label que contiene un input de tipo email-->
+            <!--Atributo pattern necesita caracteres alfanumericos o los siguientes caracteres ".,_,%,+,-"; seguidos de un "@"; seguidos de caracteres alfanumericos, puntos o guiones-->
+            <label>
+                Correo el&eacute;ctronico: <input type="email" id="email_id" name="email"
+                    placeholder="introduzca su correo el&eacute;ctronico"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]" required
+                    title="introduzca una direccion de correo electronico valida">
+            </label>
+            <!--label que contiene input de tipo telefono-->
+            <!--Atributo pattern necesita exclusivamente 9 digitos numericos-->
+            <label>
+                N&uacute;mero de tel&eacute;fono: <input type="tel" id="tel_id" name="telefono"
+                    placeholder="introduzca su n&uacute;mero de tel&eacute;fono" pattern="\d{9}" required
+                    title="introduzca un numero de telefono de 9 digitos">
+            </label>
+            <!--label que contiene un textarea-->
+            <label>
+                <textarea id="masinfo_id" name="masinfo" rows="5" cols="44"
+                    placeholder="solicite m&aacute;s informaci&oacute;n"></textarea>
+            </label>
+            <!-- input checkbox de la politica de privacidad -->
+            <div class="checkbox-container">
+                <input type="checkbox" required id="politica_checkbox_id">
+                <!--label del checkbox a la derecha del checkbox-->
+                <label for="politica_checkbox_id">
+                    He le&iacute;do y acepto la <a href="politica_de_privacidad.html" target="_blank">p&oacute;litica de
+                        privacidad</a>
+                </label>
+            </div>
+            <!-- boton de enviar que llama a la funcion validarFormulario() que se encuentra en presupuestos.js -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <!--seccion footer-->
+    <footer id="footer_id">
+        <!--contenedor principal del footer-->
+        <div class="footer_container">
+            <!--contenedor de las 5 imagenes de redes sociales-->
+            <div class="sociales">
+                <a href="https://www.facebook.com"><img class="social_img_class_00" src="../images/facebooklogo.webp"
+                        alt="facebook logo not loaded" width="256" height="256"></a>
+                <a href="https://x.com"><img class="social_img_class_00" src="../images/xlogo.png"
+                        alt="x logo not working" width="300" height="300"></a>
+                <a href="https://www.linkedin.com"><img class="social_img_class_00" src="../images/inlogo.png"
+                        alt="linkedin logo not working" width="240" height="240"></a>
+                <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00"
+                        src="../images/instalogo.png" alt="instagram logo not working" width="256" height="256"></a>
+                <a href="https://www.youtube.com"><img class="social_img_class_00" src="../images/ytlogo.png"
+                        alt="youtube logo not working" width="256" height="256"></a>
+            </div>
+            <!--contenedor de la direccion de la empresa-->
+            <div class="direccion">
+                <p>
+                    Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
+                </p>
+            </div>
+            <!--contenedor del aviso legal-->
+            <div class="aviso_legal">
+                <p>
+                    Lea nuestro <a href="aviso_legal.html" target="_blank">Aviso Legal</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

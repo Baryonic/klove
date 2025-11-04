@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--idioma de la pagina-->
+<html lang="es">
+
+<head>
+    <!--codificacion de los caracteres-->
+    <meta charset="UTF-8">
+    <!--meta viewport para que el navegador cargue la web desde diferentes dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--descripcion de la pagina web-->
+    <meta name="description" content="Empresa de Electronica y Robotica">
+    <!--palabras clave para el buscador-->
+    <meta name="keywords" content="Keyday, Electronics, keydayelectronics, Electronica, Robotica, Robotics">
+    <!--autor de la pagina-->
+    <meta name="author" content="Francesc Miquel">
+    <!--permite a los motores indexar la pagina-->
+    <meta name="robots" content="index, follow">
+    <!--enlace al archivo de estilo en la carpeta /css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--enlace al icono de la ventana del navegador-->
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <!--titulo de productos-->
+    <title>Productos</title>
+
+    <!--enlace a las fuentes de google fonts rel preconect para optimizar la carga de fuentes antes de usarlas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Geo&family=Libertinus+Keyboard&display=swap" rel="stylesheet">
+
+
+</head>
+<!--body class productos para que el css sepa la pagina en la que se encuentra actualmente-->
+
+<body class="productos">
+    <!--seccion header-->
+    <header>
+        <!-- Menu de navegacion principal nav y lista desordenada -->
+        <nav class="menu_nav_class">
+            <ul class="menu_ul_class">
+                <!-- Enlace al inicio -->
+                <li class="menu_home">
+                    <a href="../index.html" class="menu_a">
+                        <p class="menu_p">Inicio</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de productos -->
+                <li class="menu_productos">
+                    <a href="productos.html" class="menu_a">
+                        <p class="menu_p">Productos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de presupuestos -->
+                <li class="menu_presupuestos">
+                    <a href="presupuestos.html" class="menu_a">
+                        <p class="menu_p">Presupuestos</p>
+                    </a>
+                </li>
+                <!-- Enlace a la pagina de contacto -->
+                <li class="menu_contacto">
+                    <a href="contacto.html" class="menu_a">
+                        <p class="menu_p">Contacto</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--div con el titulo productos-->
+    <div>
+        <h1>Productos</h1>
+    </div>
+    <!--seccion principal de la pagina productos que contiene divs con los respectivos productos ordenados por categorias-->
+    <section class="product_section_class">
+        <!--titulo de la categoria robots domesticos-->
+        <h3 class="product_title_class">
+            Robots Dom&eacute;sticos
+        </h3>
+        <!--contenedor grid para los productos-->
+        <div class="products_grid">
+            <!--cada producto se encuentra dentro de un div de clase product_card-->
+            <!--cada producto tiene un nombre dentro de un p, una imagen dentro de un div y una descripcion y precio dentro de otro div-->
+            <div class="product_card">
+                <p class="p_name_class">Robot Normal v6</p>
+                <div class="product_image product_image_1">
+                    <img src="../images/human_robot_03.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Un asistente automatizado que facilita las tareas del hogar, desde la
+                        limpieza hasta la organizaci&oacute;n. Ideal para quienes buscan comodidad y eficiencia en la
+                        rutina diaria, con funciones b&aacute;sicas de navegaci&oacute;n y control por voz.</p>
+                    <p class="p_price_class">desde 15.000 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Ecol&oacute;gico</p>
+                <div class="product_image product_image_1">
+                    <img src="../images/human_robot_10.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Una opci&oacute;n accesible para aquellos que quieren experimentar
+                        con tecnolog&iacute;a inteligente en casa. Este modelo ofrece capacidades de
+                        automatizaci&oacute;n mejoradas, adapt&aacute;ndose a diferentes entornos y aprendiendo
+                        h&aacute;bitos para optimizar el rendimiento.</p>
+                    <p class="p_price_class">desde 25.000 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Profesional</p>
+                <div class="product_image product_image_1">
+                    <img src="../images/human_robot_09.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Un sistema avanzado con inteligencia artificial de &uacute;ltima
+                        generaci&oacute;n, dise&ntilde;ado para ofrecer un servicio de alta calidad y m&aacute;xima
+                        eficiencia en el hogar. Puede manejar m&uacute;ltiples tareas simult&aacute;neamente, integrarse
+                        con dispositivos IoT y brindar asistencia personalizada seg&uacute;n las necesidades del
+                        usuario.</p>
+                    <p class="p_price_class">Contacte con nosotros para recibir presupuesto</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robots Normales en pack</p>
+                <div class="product_image product_image_2">
+                    <img src="../images/human_robot_00.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Compre Robots Normales en cantidad para recibir descuentos y
+                        bonificaciones</p>
+                    <p class="p_price_class">Contacte con nosotros para recibir presupuesto</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robots Trabajadores en pack</p>
+                <div class="product_image product_image_2">
+                    <img src="../images/human_robot_07.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Compre Robots Trabajadores en cantidad para recibir descuentos y
+                        bonificaciones</p>
+                    <p class="p_price_class">Contacte con nosotros para recibir presupuesto</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robots Profesionales en pack</p>
+                <div class="product_image product_image_2">
+                    <img src="../images/human_robot_08.png" alt="human robot error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Compre Robots Profesionales en cantidad para recibir descuentos y
+                        bonificaciones</p>
+                    <p class="p_price_class">Contacte con nosotros para recibir presupuesto</p>
+                </div>
+            </div>
+        </div>
+        <!--subseccion de robots de juguete-->
+        <h3 class="product_title_class">
+            Robots de Juguete
+        </h3>
+        <!--div de productos de los robots de juguete-->
+        <div class="products_grid" id="product_grid_02">
+            <div class="product_card">
+                <p class="p_name_class">Robot Normal v3</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_02.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">El juguete más popular del mundo por 2 años consecutivos</p>
+                    <p class="p_price_class">89,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Acu&aacute;tico</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_00.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Sumergible hasta 20 metros con una velocidad m&aacute;xima de 10Km/H
+                    </p>
+                    <p class="p_price_class">109,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot A&eacute;reo</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_01.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Funcionalidad de dron y robot</p>
+                    <p class="p_price_class">119,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Ninja</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_03.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Este robot cuenta con más movimientos y los ejecuta más rápido</p>
+                    <p class="p_price_class">99,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Rambo</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_04.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">El robot m&aacute;s fuerte de nuestra gama, ideal para combates
+                        cuerpo a cuerpo</p>
+                    <p class="p_price_class">94,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Militar USA</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_05.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Tecnolog&iacute;a GPS y conexi&oacute;n directa a DARPANET</p>
+                    <p class="p_price_class">94,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot Solar Punk</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_06.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">El m&aacute;s ecol&oacute;gico, gracias a sus paneles solares no
+                        requiere de cargado</p>
+                    <p class="p_price_class">139,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Robot James Bond 2087</p>
+                <div class="product_image product_image_3">
+                    <img src="../images/toy_robot_08.png" alt="toy robot error de imagen" width="400" height="400">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">El robot de juguete m&aacute;s avanzado del mercado</p>
+                    <p class="p_price_class">Agotado</p>
+                </div>
+            </div>
+        </div>
+        <!--subseccion de microcontroladores-->
+        <h3 class="product_title_class">
+            Microcontroladores
+        </h3>
+        <!--div de productos de microcontroladores-->
+        <div class="products_grid" id="product_grid_03">
+            <div class="product_card">
+                <p class="p_name_class">Arduino Uno</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_02.webp" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador f&aacute;cil de usar, con un procesador ATmega328P
+                        de 16MHz, ideal para proyectos b&aacute;sicos de electr&oacute;nica y rob&oacute;tica.</p>
+                    <p class="p_price_class">22,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Arduino Mega 2560</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_06.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Placa potente con 54 pines de E/S digitales, dise&ntilde;ada para
+                        proyectos de rob&oacute;tica y automatizaci&oacute;n a gran escala.</p>
+                    <p class="p_price_class">39,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Arduino Nano</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_05.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Versi&oacute;n peque&ntilde;a y adaptable del Arduino Uno, ideal para
+                        proyectos compactos.</p>
+                    <p class="p_price_class">12,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">STM blackpill</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_07.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador de alto rendimiento basado en STM32, que ofrece
+                        procesamiento r&aacute;pido y opciones de conectividad avanzadas.</p>
+                    <p class="p_price_class">11,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">STM32 Nucleo</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_08.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Placa de desarrollo vers&aacute;til con procesadores ARM Cortex-M,
+                        ideal para prototipos y aplicaciones industriales.</p>
+                    <p class="p_price_class">8,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">ESP 8266</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_03.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador compacto con Wi-Fi integrado, perfecto para
+                        aplicaciones IoT y automatizaci&oacute;n del hogar.</p>
+                    <p class="p_price_class">5,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">ESP 32</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_09.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador de doble n&uacute;cleo con Wi-Fi y Bluetooth
+                        integrados, perfecto para proyectos avanzados de IoT e inteligencia artificial.</p>
+                    <p class="p_price_class">8,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">ESP 32 OLED</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_10.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Variante del ESP32 con una pantalla OLED integrada, ideal para
+                        visualizaci&oacute;n de datos en tiempo real.</p>
+                    <p class="p_price_class">14,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Teensy 4.1</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_11.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador ARM Cortex-M7 de 600MHz, que ofrece procesamiento de
+                        alta velocidad para aplicaciones exigentes.</p>
+                    <p class="p_price_class">35,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">MSP430</p>
+                <div class="product_image product_image_4">
+                    <img src="../images/mcc_img_12.png" alt="mcc error de imagen" width="300" height="300">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Microcontrolador de bajo consumo, ideal para dispositivos operados
+                        por bater&iacute;a y proyectos eficientes en energ&iacute;a.</p>
+                    <p class="p_price_class">11,99 euros</p>
+                </div>
+            </div>
+        </div>
+        <!--subseccion de impresoras 3d-->
+        <h3 class="product_title_class">
+            Impresoras 3D
+        </h3>
+        <!--div de producto de impresoras 3d -->
+        <div class="products_grid">
+            <div class="product_card">
+                <p class="p_name_class">Impresora B&aacute;sica</p>
+                <div class="product_image product_image_5">
+                    <img src="../images/3d_printer_01.png" alt="3d printer error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Esta impresora 3D compacta y asequible es perfecta para principiantes
+                        y aficionados. Dise&ntilde;ada para ser confiable y f&aacute;cil de usar, cuenta con una
+                        estructura resistente, controles simples y capacidades de impresi&oacute;n precisas. Ya sea que
+                        est&eacute;s creando peque&ntilde;os prototipos o dise&ntilde;os art&iacute;ticos, esta
+                        impresora ofrece resultados consistentes sin gastar una fortuna.</p>
+                    <p class="p_price_class">379,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Impresora Prodesional</p>
+                <div class="product_image product_image_5">
+                    <img src="../images/3d_printer_02.png" alt="3d printer error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Eleva tus creaciones con esta impresora 3D de alto nivel, que ofrece
+                        cinco veces el valor de los modelos est&aacute;ndar. Con una resoluci&oacute;n de
+                        impresi&oacute;n superior, compatibilidad con materiales avanzados y velocidades de
+                        impresi&oacute;n m&aacute;s r&aacute;pidas, esta m&aacute;quina es ideal para profesionales y
+                        entusiastas que buscan mayor eficiencia y detalle en sus proyectos.</p>
+                    <p class="p_price_class">789,99 euros</p>
+                </div>
+            </div>
+            <div class="product_card">
+                <p class="p_name_class">Impresora Vanguardista</p>
+                <div class="product_image product_image_5">
+                    <img src="../images/3d_printer_03.png" alt="3d printer error de imagen" width="500" height="500">
+                </div>
+                <div class="product_info">
+                    <p class="p_description_class">Da un salto al futuro con esta impresora 3D ultra premium.
+                        Dise&ntilde;ada con tecnolog&iacute;a de &uacute;ltima generaci&oacute;n, funciones de
+                        dise&ntilde;o asistido por IA y capacidades de impresi&oacute;n multimaterial, esta potente
+                        m&aacute;quina puede producir modelos complejos y de alta precisi&oacute;n para industrias como
+                        la aeroespacial, la salud y la manufactura avanzada.</p>
+                    <p class="p_price_class">3.499,99 euros</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--seccion footer-->
+    <footer id="footer_id">
+        <!--contenedor principal del footer-->
+        <div class="footer_container">
+            <!--contenedor de las 5 imagenes de redes sociales-->
+            <div class="sociales">
+                <a href="https://www.facebook.com"><img class="social_img_class_00" src="../images/facebooklogo.webp"
+                        alt="facebook logo not loaded" width="256" height="256"></a>
+                <a href="https://x.com"><img class="social_img_class_00" src="../images/xlogo.png"
+                        alt="x logo not working" width="300" height="300"></a>
+                <a href="https://www.linkedin.com"><img class="social_img_class_00" src="../images/inlogo.png"
+                        alt="linkedin logo not working" width="240" height="240"></a>
+                <a href="https://www.instagram.com/keyday_electronics"><img class="social_img_class_00"
+                        src="../images/instalogo.png" alt="instagram logo not working" width="256" height="256"></a>
+                <a href="https://www.youtube.com"><img class="social_img_class_00" src="../images/ytlogo.png"
+                        alt="youtube logo not working" width="256" height="256"></a>
+            </div>
+            <!--contenedor de la direccion de la empresa-->
+            <div class="direccion">
+                <p>
+                    Keyday Electronics 123 Sunset Lane, Suite 7 Honolulu, HI 96815 United States
+                </p>
+            </div>
+            <!--contenedor del aviso legal-->
+            <div class="aviso_legal">
+                <p>
+                    Lea nuestro <a href="aviso_legal.html" target="_blank">Aviso Legal</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
