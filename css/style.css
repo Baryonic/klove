@@ -238,7 +238,7 @@ footer {
 
 }
 
-/* News Container Styling */
+/* News Container Styling -----------------------------------------------------------------------------*/
 .news-container {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -344,8 +344,19 @@ footer {
         margin: 0 10px;
     }
 }
-
-
+/*-IP LOCATOR--------------------------------------------------------------------------------______________________*/
+.location_div{
+    position: relative;
+    float: left;
+    border: 1px solid black;
+    width: 13rem;
+    background-color: rgba(255, 236, 111, 0.327);
+    padding: 10px;
+}
+.location_div p, h2{
+    text-align: center;
+    
+}
 
 
 /*OLD STUFF*/
