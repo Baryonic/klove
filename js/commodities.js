@@ -2,10 +2,11 @@
 async function fetchCommoditiesData() {
     const apiKey = 'your_api_key_here'; // Replace with your Metals-API key
     const baseUrl = 'https://metals-api.com/api/latest';
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Proxy to bypass CORS issues
 
     try {
-        // Fetch data from Metals-API
-        const response = await fetch(`${baseUrl}?access_key=${apiKey}&base=USD&symbols=EUR,XAU,XAG`);
+        // Fetch data from Metals-API using a proxy
+        const response = await fetch(`${proxyUrl}${baseUrl}?access_key=${apiKey}&base=USD&symbols=EUR,XAU,XAG`);
         const data = await response.json();
 
         if (data.success) {
@@ -18,9 +19,11 @@ async function fetchCommoditiesData() {
             document.getElementById('petrodollar-price').textContent = 'N/A';
         } else {
             console.error('Error fetching data:', data.error);
+            alert('Failed to fetch commodities data. Please try again later.');
         }
     } catch (error) {
         console.error('Error fetching commodities data:', error);
+        alert('An error occurred while fetching commodities data. Please check your network connection.');
     }
 }
 

@@ -352,13 +352,27 @@ footer {
     width: 13rem;
     background-color: rgba(255, 236, 111, 0.327);
     padding: 10px;
+    margin: 10px;
 }
 .location_div p, h2{
     text-align: center;
     
 }
 
+/*Commodities div____________________________________________________________________________________________________________________*/
+.commodities_div{
+    border: 1px solid black;
+    position: relative;
+    float: left;
+    margin:10px;
+    background-color: rgba(0, 255, 13, 0.108);
+}
 
+/*FOOTER_________________________________________________________________________________________________________________*/
+#footer_id{
+    position: relative;
+    float: left;
+}
 /*OLD STUFF*/
 a {
     color: #515557;
