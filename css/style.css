@@ -103,7 +103,24 @@ div {
         margin: 0 10px;
     }
 }
+/*scalper________________________________________________________________________________________________________________________*/
+.crypto-scalper-div{
+    position: relative;
+    float: left;
+    margin: 10px;
+    padding: 2px;
+}
+.scalper-prices{
+    border: 1px solid blue;
+    position: inherit;
+    padding: 2px;
+}
 
+.scalper-symbol{
+    border: 1px solid red;
+    position: inherit;
+    margin: 2px;
+}
 /* Coinbase/Crypto Styling ----------------------------------------------------------------------------*/
 .coinbase_div_class {
     padding: 10px;
