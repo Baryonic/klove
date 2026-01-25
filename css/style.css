@@ -1,5 +1,6 @@
 div {
  border:1px dotted black;   
+ color: #fff;
 }
 
 .noticias_div_class {
@@ -8,28 +9,40 @@ div {
     position: relative;
     float: right;
     width: 300px;
+    color: #fff;
+}
+.news-controls{
+    background-color: rgba(158, 245, 255, 0.289);
+}
+button{
+    background-color: #00a65345;
+}
+.news-container{
+    background-color: #51555739;
 }
 /* INFO ---------------------------------------------------------------------------------------------*/
 .info_div_class {
     padding: 10px;
-    background-color: #6c5ce7;
+    background-color: #8376e337;
     position: relative;
     float: left;
     width: 300px;
     margin-right: 20px;
+    color: #fff;
 }
 
 .info-container {
-    background-color: #fff;
+    background-color: inherit;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     max-width: 100%;
+    color: inherit;
 }
 
 .info-container h2 {
     text-align: center;
-    border-bottom: 2px solid #e4e6eb;
+    border-bottom: 2px solid;
     padding-bottom: 10px;
     margin: 0 0 15px 0;
     padding-left: 0;
@@ -51,7 +64,7 @@ div {
 
 .info-description {
     font-size: 0.9em;
-    color: #636e72;
+    color: inherit;
     line-height: 1.5;
     margin: 0;
     padding-left: 0;
@@ -66,7 +79,7 @@ div {
 }
 
 .refresh-info-btn {
-    background-color: #988aff6e;
+    background-color: #988aff43;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -86,7 +99,7 @@ div {
 }
 
 .refresh-info-btn:active {
-    background-color: #fff789;
+    background-color: #fff78948;
     transform: translateY(1px);
 }
 
@@ -109,17 +122,20 @@ div {
     float: left;
     margin: 10px;
     padding: 2px;
+    color: #fff;
 }
 .scalper-prices{
     border: 1px solid blue;
     position: inherit;
     padding: 2px;
+    color: inherit;
 }
 
 .scalper-symbol{
     border: 1px solid red;
     position: inherit;
     margin: 2px;
+    color: inherit;
 }
 /* Coinbase/Crypto Styling ----------------------------------------------------------------------------*/
 .coinbase_div_class {
@@ -132,7 +148,7 @@ div {
 }
 
 .crypto-container {
-    background-color: #fff;
+    color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -253,7 +269,6 @@ footer {
 
 /* News Container Styling -----------------------------------------------------------------------------*/
 .news-container {
-    background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -262,7 +277,7 @@ footer {
 
 .news-container h2 {
     text-align: center;
-    color: #1877f2;
+    color: #fff;
     border-bottom: 2px solid #e4e6eb;
     padding-bottom: 10px;
     margin: 0 0 15px 0;
@@ -276,7 +291,7 @@ footer {
 }
 
 .news-item {
-    border-bottom: 1px solid #e4e6eb;
+    border-bottom: 1px solid;
     padding: 10px 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -300,12 +315,12 @@ footer {
 
 .news-item h3 a:hover {
     text-decoration: underline;
-    color: #1877f2;
+    color: #ffc400;
 }
 
 .news-item p {
     margin: 0;
-    color: #65676b;
+    color: #ffffff;
     font-size: 0.9em;
     line-height: 1.4;
     padding-left: 0;
@@ -314,7 +329,7 @@ footer {
 .loading {
     text-align: center;
     font-size: 1em;
-    color: #65676b;
+    color: #ffffff;
     padding: 20px 0;
 }
 
@@ -326,7 +341,6 @@ footer {
 }
 
 .news-controls button {
-    background-color: #1877f2;
     color: white;
     border: none;
     cursor: pointer;
@@ -337,11 +351,11 @@ footer {
 }
 
 .news-controls button:hover {
-    background-color: #166fe5;
+    background-color: #60b24d38;
 }
 
 .news-controls button:active {
-    background-color: #1464d0;
+    background-color: #1465d040;
     transform: translateY(1px);
 }
 
@@ -366,10 +380,11 @@ footer {
     background-color: rgba(255, 236, 111, 0.327);
     padding: 10px;
     margin: 10px;
+    color: #fff;
 }
 .location_div p, h2{
     text-align: center;
-    
+    color: inherit;
 }
 
 /*Commodities div____________________________________________________________________________________________________________________*/
@@ -379,6 +394,7 @@ footer {
     float: left;
     margin:10px;
     background-color: rgba(0, 255, 13, 0.108);
+    color: #fff;
 }
 
 /*FOOTER_________________________________________________________________________________________________________________*/
@@ -388,8 +404,9 @@ footer {
 }
 /*OLD STUFF*/
 a {
-    color: #515557;
+    color: #00fff7;
     font-weight: bold;
+    text-decoration: none;
 }
 
 
