@@ -1,6 +1,31 @@
 div {
- border:1px dotted black;   
  color: #fff;
+ border-radius: 2px;
+ text-align: center;
+ padding: 2px;
+}
+/* animation: borderSwap 1s infinite alternate;*/
+@keyframes borderSwap {
+    0%   { border:1px dashed black;}
+    1%   { border-color: #00fff700; }   /* show solid */
+    20%  { border-color: #00fff75c; }
+    40%  { border-color: #00fff7b5; }   /* fade to dashed */
+    50% { border-color: #00ffffde; }
+    60%  { border-color: #00fff7b5; } 
+    80%  { border-color: #00fff75c; }
+    99%   { border-color: #00fff700; }
+    100%{border:1px dashed black;}
+}
+@keyframes borderSwap2 {
+    0%   { border:1px dashed black;}
+    1%   { border-color: #00ff0030; }   /* show solid */
+    20%  { border-color: #00ff0080; }
+    40%  { border-color: #00ff00a0 }   /* fade to dashed */
+    50% { border-color: #00ff00ff; }
+    60%  { border-color: #00ff00a0; } 
+    80%  { border-color: #00ff0080; }
+    99%   { border-color: #00ff0030; }
+    100%{border:1px dashed black;}
 }
 
 
@@ -101,23 +126,38 @@ div {
     }
 }
 /*scalper________________________________________________________________________________________________________________________*/
+.scalper-box{
+    position: relative;
+    float: left;
+    width: 14%;
+}
 .crypto-scalper-div{
     position: relative;
     float: left;
     margin: 10px;
     padding: 2px;
     color: #fff;
+    width: 400px;
+}
+
+.scalper-info{
+    visibility: collapse;
+}
+.scalper-box:hover .scalper-info{
+    visibility: visible;
+    animation: borderSwap2 2s infinite alternate;
 }
 .scalper-prices{
-    border: 1px solid blue;
-    position: inherit;
+
+    position: relative;
+    float: left;
     padding: 2px;
     color: inherit;
 }
 
 .scalper-symbol{
-    border: 1px solid red;
-    position: inherit;
+    animation: borderSwap 1s infinite alternate;
+    position: relative;
     margin: 2px;
     color: inherit;
 }

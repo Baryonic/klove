@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
             box.className = 'scalper-box';
             box.innerHTML = `
                 <div class="scalper-symbol">${sym}</div>
-                <div>EUR: <span id="scalper-${sym}-eur">Loading...</span></div>
-                <div>USDC: <span id="scalper-${sym}-usdc">Loading...</span></div>
+                <div class="scalper-info">EUR: <span id="scalper-${sym}-eur" >Loading...</span></div>
+                <div class="scalper-info">USDC: <span id="scalper-${sym}-usdc" >Loading...</span></div>
             `;
             container.appendChild(box);
         });
