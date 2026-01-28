@@ -28,7 +28,22 @@ div {
     100%{border:1px dashed black;}
 }
 
+.liquid_crystal {
+    position: relative;
+    float: left;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.307), rgba(230, 230, 230, 0.184));
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin: 15px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    transition: transform 0.3s;
+}
 
+.liquid_crystal:hover {
+    transform: scale(1.02);
+}
 /* INFO ---------------------------------------------------------------------------------------------*/
 .info_div_class {
     padding: 10px;
