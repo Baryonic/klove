@@ -3,23 +3,7 @@ div {
  color: #fff;
 }
 
-.noticias_div_class {
-    padding: 10px;
-    background-color: rgba(158, 245, 255, 0.289);
-    position: relative;
-    float: right;
-    width: 300px;
-    color: #fff;
-}
-.news-controls{
-    background-color: rgba(158, 245, 255, 0.289);
-}
-button{
-    background-color: #00a65345;
-}
-.news-container{
-    background-color: #51555739;
-}
+
 /* INFO ---------------------------------------------------------------------------------------------*/
 .info_div_class {
     padding: 10px;
@@ -139,6 +123,7 @@ button{
 }
 /* Coinbase/Crypto Styling ----------------------------------------------------------------------------*/
 .coinbase_div_class {
+    margin-left: 20px;
     padding: 10px;
     background-color: rgba(173, 216, 230, 0.138);
     position: relative;
@@ -358,7 +343,24 @@ footer {
     background-color: #1465d040;
     transform: translateY(1px);
 }
-
+.noticias_div_class {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(158, 245, 255, 0.289);
+    position: relative;
+    float: right;
+    width: 300px;
+    color: #fff;
+}
+.news-controls{
+    background-color: rgba(158, 245, 255, 0.289);
+}
+button{
+    background-color: #00a65345;
+}
+.news-container{
+    background-color: #51555739;
+}
 /* Responsive design */
 @media (max-width: 768px) {
     .noticias_div_class {
@@ -436,10 +438,12 @@ header {
     margin: 5px;
     animation: colorDeFondo02 16s infinite alternate;
 }
-
+/*________________________NAV_____________________________________________________________________________*/
 
 .menu_nav_class {
-    width: 100%;
+    width: 102.5%;
+    margin: auto;
+
 }
 
 
@@ -450,11 +454,11 @@ header {
 }
 
 .menu_ul_class li {
-    background-color: pink;
+    background-color: rgba(255, 105, 237, 0.13);
 }
 
 .menu_ul_class li:hover {
-    background-color: #dddddd;
+    background-color: #3388ff17;
 }
 
 .menu_a {
@@ -468,15 +472,18 @@ header {
     width: 25%;
     text-align: center;
     position: relative;
-    margin: 2px;
+    margin: 1%;
 }
 
 .home .menu_home,
 .productos .menu_productos,
 .presupuestos .menu_presupuestos,
 .contacto .menu_contacto {
-    background-color: red;
+    background-color: rgba(0, 255, 128, 0.203);
 
+}
+body{
+    background-color: #050505;
 }
 
 
