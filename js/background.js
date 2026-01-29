@@ -39,7 +39,7 @@ document.body.appendChild(video);
 video.play().catch(err => console.log("Autoplay blocked:", err));
 
 video.addEventListener("ended", () => {
-    video.style.transition = "opacity 20s ease-out";
+    video.style.transition = "opacity 10s ease-out";
     video.style.opacity = "0";
 
     setTimeout(() => {

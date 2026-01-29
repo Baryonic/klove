@@ -1,49 +1,126 @@
 div {
- color: #fff;
- border-radius: 2px;
- text-align: center;
- padding: 2px;
-}
-/* animation: borderSwap 1s infinite alternate;*/
-@keyframes borderSwap {
-    0%   { border:1px dashed black;}
-    1%   { border-color: #00fff700; }   /* show solid */
-    20%  { border-color: #00fff75c; }
-    40%  { border-color: #00fff7b5; }   /* fade to dashed */
-    50% { border-color: #00ffffde; }
-    60%  { border-color: #00fff7b5; } 
-    80%  { border-color: #00fff75c; }
-    99%   { border-color: #00fff700; }
-    100%{border:1px dashed black;}
-}
-@keyframes borderSwap2 {
-    0%   { border:1px dashed black;}
-    1%   { border-color: #00ff0030; }   /* show solid */
-    20%  { border-color: #00ff0080; }
-    40%  { border-color: #00ff00a0 }   /* fade to dashed */
-    50% { border-color: #00ff00ff; }
-    60%  { border-color: #00ff00a0; } 
-    80%  { border-color: #00ff0080; }
-    99%   { border-color: #00ff0030; }
-    100%{border:1px dashed black;}
+    color: #fff;
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px;
 }
 
-.liquid_crystal {
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* animation: borderSwap 1s infinite alternate;*/
+@keyframes borderSwap {
+    0% {
+        border: 1px dashed black;
+    }
+
+    1% {
+        border-color: #00fff700;
+    }
+
+    /* show solid */
+    20% {
+        border-color: #00fff75c;
+    }
+
+    40% {
+        border-color: #00fff7b5;
+    }
+
+    /* fade to dashed */
+    50% {
+        border-color: #00ffffde;
+    }
+
+    60% {
+        border-color: #00fff7b5;
+    }
+
+    80% {
+        border-color: #00fff75c;
+    }
+
+    99% {
+        border-color: #00fff700;
+    }
+
+    100% {
+        border: 1px dashed black;
+    }
+}
+
+@keyframes borderSwap2 {
+    0% {
+        border: 1px dashed black;
+    }
+
+    1% {
+        border-color: #00ff0030;
+    }
+
+    /* show solid */
+    20% {
+        border-color: #00ff0080;
+    }
+
+    40% {
+        border-color: #00ff00a0
+    }
+
+    /* fade to dashed */
+    50% {
+        border-color: #00ff00ff;
+    }
+
+    60% {
+        border-color: #00ff00a0;
+    }
+
+    80% {
+        border-color: #00ff0080;
+    }
+
+    99% {
+        border-color: #00ff0030;
+    }
+
+    100% {
+        border: 1px dashed black;
+    }
+}
+
+.liquid_crystal, footer {
     position: relative;
     float: left;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.307), rgba(230, 230, 230, 0.184));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.023), rgba(230, 230, 230, 0.184));
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     padding: 20px;
     margin: 15px;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.175);
+    border: 1px solid rgba(255, 255, 255, 0.037);
     transition: transform 0.3s;
+}
+
+.crystal-text {
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: #ffffff;
+    opacity: 1;
 }
 
 .liquid_crystal:hover {
     transform: scale(1.02);
 }
+
 /* INFO ---------------------------------------------------------------------------------------------*/
 .info_div_class {
     padding: 10px;
@@ -135,18 +212,20 @@ div {
         margin-bottom: 20px;
         margin-right: 0;
     }
-    
+
     .info-container {
         margin: 0 10px;
     }
 }
+
 /*scalper________________________________________________________________________________________________________________________*/
-.scalper-box{
+.scalper-box {
     position: relative;
     float: left;
     width: 14%;
 }
-.crypto-scalper-div{
+
+.crypto-scalper-div {
     position: relative;
     float: left;
     margin: 10px;
@@ -155,14 +234,16 @@ div {
     width: 400px;
 }
 
-.scalper-info{
+.scalper-info {
     visibility: collapse;
 }
-.scalper-box:hover .scalper-info{
+
+.scalper-box:hover .scalper-info {
     visibility: visible;
     animation: borderSwap2 2s infinite alternate;
 }
-.scalper-prices{
+
+.scalper-prices {
 
     position: relative;
     float: left;
@@ -170,12 +251,13 @@ div {
     color: inherit;
 }
 
-.scalper-symbol{
+.scalper-symbol {
     animation: borderSwap 1s infinite alternate;
     position: relative;
     margin: 2px;
     color: inherit;
 }
+
 /* Coinbase/Crypto Styling ----------------------------------------------------------------------------*/
 .coinbase_div_class {
     margin-left: 20px;
@@ -277,7 +359,7 @@ div {
     color: #65676b;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid ;
+    border-top: 1px solid;
 }
 
 .error-message {
@@ -295,17 +377,12 @@ div {
         margin-bottom: 20px;
         margin-right: 0;
     }
-    
+
     .crypto-container {
         margin: 0 10px;
     }
 }
 
-/*footer*/
-footer {
-    background-color: #00a652;
-
-}
 
 /* News Container Styling -----------------------------------------------------------------------------*/
 .news-container {
@@ -398,6 +475,7 @@ footer {
     background-color: #1465d040;
     transform: translateY(1px);
 }
+
 .noticias_div_class {
     margin: 20px;
     padding: 10px;
@@ -407,15 +485,19 @@ footer {
     width: 300px;
     color: #fff;
 }
-.news-controls{
+
+.news-controls {
     background-color: rgba(158, 245, 255, 0.289);
 }
-button{
+
+button {
     background-color: #00a65345;
 }
-.news-container{
+
+.news-container {
     background-color: #51555739;
 }
+
 /* Responsive design */
 @media (max-width: 768px) {
     .noticias_div_class {
@@ -423,13 +505,14 @@ button{
         width: 100%;
         margin-top: 20px;
     }
-    
+
     .news-container {
         margin: 0 10px;
     }
 }
+
 /*-IP LOCATOR--------------------------------------------------------------------------------______________________*/
-.location_div{
+.location_div {
     position: relative;
     float: left;
     border: 1px solid black;
@@ -439,26 +522,29 @@ button{
     margin: 10px;
     color: #fff;
 }
-.location_div p, h2{
+
+.location_div p,
+h2 {
     text-align: center;
     color: inherit;
 }
 
 /*Commodities div____________________________________________________________________________________________________________________*/
-.commodities_div{
+.commodities_div {
     border: 1px solid black;
     position: relative;
     float: left;
-    margin:10px;
+    margin: 10px;
     background-color: rgba(0, 255, 13, 0.108);
     color: #fff;
 }
 
 /*FOOTER_________________________________________________________________________________________________________________*/
-#footer_id{
+#footer_id {
     position: relative;
     float: left;
 }
+
 /*OLD STUFF*/
 a {
     color: #00fff7;
@@ -493,6 +579,7 @@ header {
     margin: 5px;
     animation: colorDeFondo02 16s infinite alternate;
 }
+
 /*________________________NAV_____________________________________________________________________________*/
 
 .menu_nav_class {
@@ -537,8 +624,9 @@ header {
     background-color: rgba(0, 255, 128, 0.203);
 
 }
-body{
-    background-color: #050505;
-}
+/*footer*/
+footer {
+    color: wheat;
 
+}
 
