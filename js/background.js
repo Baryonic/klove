@@ -4,7 +4,7 @@ document.body.style.padding = "0";
 document.body.style.overflow = "hidden";
 
 // Number of background videos available
-const TOTAL_VIDEOS = 4;
+const TOTAL_VIDEOS = 5;
 
 // Pick a random number between 1 and TOTAL_VIDEOS
 const randomIndex = Math.floor(Math.random() * TOTAL_VIDEOS) + 1;
